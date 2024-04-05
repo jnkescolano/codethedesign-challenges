@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.cdnfonts.com/css/source-sans-pro" rel="stylesheet">
+    <title>Twitter Embed</title>
+</head>
+<body>
+  <style>
+    body {
+      width: auto%;
+      height: 100vh;
+      background-color: #141D26;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Source Sans Pro;
+    }
+
+    .container {
+      width: 550px;
+      height: 170px;
+      display: flex;
+      flex-direction: column;
+      gap: 23px;
+      background-color: #243447;
+      border-radius: 10px;
+      padding: 35px 31px;
+    }
+
+    .row-content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .group {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 22px;
+    }
+
+    h3 {
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      line-height: 22px;
+      margin: 0;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 600;
+      color: white;
+      margin: 0;
+      opacity: 60%;
+    }
+
+    p.twt-content {
+      color: white;
+      opacity: 100%;
+      font-weight: normal;
+      line-height: 26px;
+    }
+
+    span {
+      color: #1DA1F2;
+    }
+
+    .group-emoji {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .row-info {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+
+    .twt-pfp {
+      width: 50px;
+      height: 50px;
+    }
+
+  </style>
+
+  <div class="container">
+    <div class="row-content">
+      <div class="group">
+        <img class="twt-pfp" src="images/twt-pfp.png" alt="profile icon"/>
+        <h3>John Doe
+          <br>
+          <p style="font-weight: 400;">@realjohndoe</p>
+        </h3>
+      </div>
+      <img class="twt-icon" src="icons/twt-icon.svg" alt="twitter icon" />
+    </div>
+    <div class="row-content">
+      <p class="twt-content">
+        Why do they call it 'debugging' when it feels more like 'wildly guessing and<br>
+        hoping for the best'? <span>#programming #coding #debugging</span>
+      </p>
+    </div>
+    <div class="row-info">
+      <div class="group-emoji">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#A7AEB5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+        </svg>
+        <p>650</p>
+      </div>
+      <p>3:40 PM – Feb 24, 2022</p>
+    </div>
+  </div>
+
+</body>
+</html>
